@@ -1,0 +1,836 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    color: white !important; 
+    opacity: 1 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #55C1FF;
+    padding: 25px 0;
+    padding-bottom: 43px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #55C1FF;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #55C1FF;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+nav ul li:hover .dropdown-menu,
+nav ul li .dropdown-menu:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li .dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #55C1FF;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+nav ul li .dropdown-menu .dropdown-item:hover .submenu,
+nav ul li .dropdown-menu .submenu:hover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li .dropdown-menu .dropdown-item {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+nav ul li .dropdown-menu .dropdown-item a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+nav ul li .dropdown-menu .dropdown-item a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #55C1FF;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Playwrite SK", cursive;
+    color: #fff;
+}
+
+.logo:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-donate {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-donate a {
+    color: #fff;
+}
+
+.btn-donate:hover {
+    background-color: #ec971f;
+}
+
+.btn-donate a:hover {
+    color: #fff;
+}
+
+.color-one{
+    color: yellow;
+    font-family: "Playwrite SK", cursive;
+}
+
+.container-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.block{
+    display: flex;
+    width: 100%;
+    background-color: #55C1FF;
+    color: white;
+    padding: 50px;
+}
+.color{
+    color: yellow;
+    font-family: "Playwrite SK", cursive !important;
+    font-size: 2.7rem;
+}
+.col-7 h2{
+    font-size: 2.7rem;
+    padding-bottom: 20px;
+}
+.col-7 p{
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+}
+.col-7 a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.block img{
+    width: 100%;
+    height: auto;
+}
+.fa-solid{
+    padding-left: 3px;
+}
+.fa-arrow-right{
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.register{
+    background-color: aqua;
+    color: black;
+    padding: 20px;
+}
+.form{
+    height: auto;
+    width: auto;
+    padding: 35px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.menu-item {
+    text-align: center;
+    color: white;
+}
+.terms{
+    padding: 35px;
+    background-color: blue;
+}
+.regis{
+    text-align: center;
+    padding: 35px;
+}
+.regis h1{
+    font-size: 2.6rem;
+}
+.menu-h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+footer {
+    padding: 2.5rem;
+    background-color: #e6e9f0;
+    font-size: .95rem;
+    line-height: 2.375rem;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color:#55C1FF;
+}
+.footer-logo{
+    font-family: "Playwrite SK", cursive !important;
+    font-size: 30px;
+    color: #f0ad4e;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+.login {
+    padding-bottom: 50px;
+    align-self: center;
+}
+
+.form-2 {
+    padding: 35px;
+    width: 100%;
+    max-width: 500px;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 40px;
+}
+
+.form-2 .mt-3 {
+    text-align: center;
+}
+
+.h1-header {
+    text-align: center;
+    padding: 30px;
+    font-weight: 900;
+}
+
+.actions{
+    padding: 30px;
+    padding-bottom: 35px;
+}
+.card{
+    background: #ffe855;
+    padding: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.card h3{
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+.card a{
+    color: black;
+    text-decoration: none;
+}
+
+.widget{
+    background-color: blue;
+    color: white;
+    padding: 3rem 0;
+}
+.widget-header h2{
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 2.375rem;
+    letter-spacing: .05em;
+}
+.widget-header{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    margin-top: 35px;
+}
+.privacy{
+    padding: 19px;
+}
+.col-lg-3 p{
+    font-size: .875rem;
+    min-height: 6rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.col-lg-3 h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    min-height: 58px;
+}
+.highlight{
+    color: yellow;
+}
+
+.banner{
+    height: 450px;
+    width: 450px;
+}
+
+.main-actions{
+    box-sizing: border-box;
+    padding: 55px;
+}
+.heading{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    padding: 30px;
+}
+.heading h2{
+    font-size: 2.5rem;
+}
+.text-inner{
+    color: white;
+    background-color: deepskyblue;
+    padding: 1rem;
+    height: 100%;
+}
+.text-inner h2{
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 2.375rem;
+    letter-spacing: .05em;
+}
+.text-inner p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+.text-inner ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-inner ol li{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.number{
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 2.375rem;
+    letter-spacing: .05em;
+    margin-right: 1.5rem;
+}
+.text-inner ol li span{
+    font-weight: 400;
+}
+.campain-item{
+    display: flex;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+.cm-image{
+    position: relative;
+    height: 100%;
+}
+.cm-details{
+    padding: 1rem 0;
+    width: 100%;
+}
+.cm-details p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    padding: 0;
+}
+.values{
+    font-weight: 700;
+    padding: 0 1rem;
+    margin-bottom: .5rem;
+}
+.values p{
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.values span{
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: darkgrey;
+}
+
+.button{
+    padding: 0 1rem;
+}
+.button a{
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.button a:hover{
+    cursor: pointer;
+}
+.campains{
+    box-sizing: border-box;
+}
+.campain-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color:white;
+    padding: 2.5rem 3rem;
+}
+.campain-details p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.campain-details span{
+    font-size: .875rem;
+    font-weight: 700;
+    color: darkgray;
+}
+.campain-details h1{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+.campain-date{
+    font-size: .75rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+.campain-values{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    margin-bottom: 1.5rem;
+}
+.campain-supportes{
+    margin-bottom: 1.5rem;
+}
+.btn-btn-prim{
+    max-width: 210px;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #ffe855;
+    line-height: 1.8125rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: none;
+}
+.btn-btn-prim a{
+    text-decoration: none;
+    color: black;
+}
+.campaign-item{
+    margin-top: 2rem;
+}
+.col-lg-6-content{
+    width: 50% !important;
+}
+.col-lg-6-img{
+    width: 50% !important;
+}
+.no-gutters{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+.campain-title-header{
+    margin-bottom: 1.875rem;
+    text-align: center;
+    padding-top: 30px;
+}
+.campain-title{
+    margin-top: 0;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 2.375rem;
+    letter-spacing: .05em;
+}
+.campain-about{
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2rem;
+    font-style: italic;
+}
+.campain-about-info{
+    padding: 20px;
+}
+
+.donation-tabs {
+    padding: 3rem;
+}
+.form-group {
+    margin-bottom: 2rem;
+}
+.donation-form-wrapper [role="radiogroup"] {
+    display: flex;
+    gap: 30px;
+}
+.donation-form-wrapper .dn-radio-item {
+    width: 100%;
+}
+.donation-form-wrapper .dn-radio-item label {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    margin: 0;
+    border: 2px solid darkgray;
+    border-radius: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: border-color .3s linear;
+}
+.donation-form-wrapper .dn-radio:checked + label {
+    border-color: yellow;
+}
+.form-control {
+    border: 2px solid darkgray !important;
+    border-radius: 0 !important;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+.custom-check-box {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+    color: darkcyan;
+    margin-bottom: 40px;
+    gap: 0.5rem;
+}
+.custom-control-input {
+    margin-top: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid darkgray;
+    border-radius: 0;
+    cursor: pointer;
+}
+.custom-check-box .custom-label {
+    font-size: .75rem;
+    color: darkgray;
+    line-height: 1.3;
+}
+.custom-check-box .custom-label a {
+    text-decoration: none;
+    color: lightblue;
+}
+.dn-radio {
+    display: none;
+}
+.btn-sub {
+    background-color: #f0ad4e;
+    align-self: center;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.campaign-donors{
+    background-color: aqua;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.campaign-donors h3{
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+}
+.campaign-donors .donors-grid .donor-item .card {
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    padding: 16px;
+}
+
+.campaign-donors .donors-grid .donor-item .donor-item--inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.campaign-donors .donors-grid .donor-item .donor-item--name p:not(.donation-date) {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: .25rem;
+    text-align: left;
+}
+.campaign-donors .donors-grid .donor-item .donation-date {
+    margin-bottom: 0;
+    font-size: .75rem;
+    line-height: 1.3;
+    text-align: left;
+}
+.text-muted {
+    color: #6c757d !important;
+}
+.campaign-donors .donors-grid .donor-item .donor-item--amount {
+    margin-left: auto;
+}
+.campaign-donors .donors-grid .donor-item .donor-item--amount p {
+    font-size: .875rem;
+    margin-left: auto;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+.campaign-donors .pagination-wrapper {
+    margin-bottom: 0;
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination {
+    --bs-pagination-padding-x: 0.75rem !important;
+    --bs-pagination-padding-y: 0.375rem !important;
+    --bs-pagination-font-size: 1rem !important;
+    --bs-pagination-color: var(--bs-link-color) !important;
+    --bs-pagination-bg: var(--bs-body-bg)!important;
+    --bs-pagination-border-width: var(--bs-border-width) !important;
+    --bs-pagination-border-color: var(--bs-border-color) !important;
+    --bs-pagination-border-radius: var(--bs-border-radius) !important;
+    --bs-pagination-hover-color: var(--bs-link-hover-color)!important;
+    --bs-pagination-hover-bg: var(--bs-tertiary-bg)!important;
+    --bs-pagination-hover-border-color: var(--bs-border-color)!important;
+    --bs-pagination-focus-color: var(--bs-link-hover-color)!important;
+    --bs-pagination-focus-bg: var(--bs-secondary-bg)!important;
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25)!important;
+    --bs-pagination-active-color: #fff!important;
+    --bs-pagination-active-bg: #0d6efd !important;
+    --bs-pagination-active-border-color: #0d6efd!important;
+    --bs-pagination-disabled-color: var(--bs-secondary-color)!important;
+    --bs-pagination-disabled-bg: !important; 
+    --bs-pagination-disabled-border-color: var(--bs-border-color)!important; ;
+    display: flex !important;
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+
+.campaign-donors .pagination .page-link {
+    color: #2d9cdb;
+}
+
+.pagination .page-link {
+    border: none;
+    background: 0 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    color: darkgray;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.campaign-donors .pagination .active .page-link {
+    color: white;
+}
+
+.donor-item{
+    padding: 15px;
+}
+
+
+.account-wrapper .page-header {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.account-wrapper .account-menu.nav-pills .nav-link.active, .account-wrapper .account-menu.nav-pills .show>.nav-link {
+    background-color: blue;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    border-radius: 0 !important;
+    background-color: #007bff !important;
+}
+.account-wrapper .account-menu.nav-pills .nav-link {
+    background-color: var(--light-gray);
+    border-radius: 0;
+}
+
+.account-wrapper .account-menu.nav-pills .nav-link a{
+    color: black;
+    text-decoration: none;
+}
+
+.account-wrapper .dashboard-wrapper {
+    height: 100%;
+}
+.account-wrapper .user-info {
+    background-color: var(--light-gray);
+    padding: 30px;
+}
+.account-wrapper .user-info--inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+.user-info--name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+.account-wrapper .user-info--details p {
+    margin-bottom: 0;
+}
+.account-wrapper .user-info--date {
+    font-size: 1rem;
+    color: darkgray;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+.account-wrapper .summary-wrapper {
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.dashboard-wrapper p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.account-wrapper .summary-item:nth-child(n+2) {
+    margin-top: 2rem;
+}
+.account-wrapper .summary-item--value {
+    margin-bottom: .5rem;
+    line-height: 1.3;
+}
+.account-wrapper .summary-item--label {
+    line-height: 1.3;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.items{
+    padding: 0% !important;
+}
+.cont{
+    padding: 10px;
+}
+.summary-item--header{
+    font-weight: bold;
+}
+.account-wrapper .form-wrapper {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--light-gray);
+}
+.account-wrapper .form-wrapper form {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white);
+}
+.form-wrapper label{
+    display: inline-block;
+    margin-bottom: .5rem;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 2rem;
+    background: var(--white);
+    color: var(--black);
+}
